@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Real Time Validation Using JS</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 50px;
+}
+.form-container {
+border: 2px solid #ccc;
+display: inline-block;
+padding: 20px 40px;
+}
+input {
+margin: 10px;
+padding: 8px;
+width: 220px;
+}
+button {
+margin-top: 10px;
+padding: 8px 20px;
+}
+#message {
+margin-top: 20px;
+font-weight: bold;
+font-size: 18px;
+}
+</style>
+</head>
+<body>
+<h1>REAL TIME VALIDATION USING JS</h1>
+<div class="form-container">
+<form onsubmit="validate(event)">
+<div>
+<input type="email" id="email" placeholder="Enter Email" />
+</div>
+<div>
+<input type="password" id="password" placeholder="Enter Password" />
+</div>
+<div>
+<input type="number" id="age" placeholder="Enter Age" />
+</div>
+<div>
+<button type="submit">Login</button>
+</div>
+</form>
+</div>
+<div id="message"></div>
+<script src="script.js"></script>
+</body>
+</html>
