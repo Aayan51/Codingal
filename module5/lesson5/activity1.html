@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JSON</h2>
+</body>
+
+<script>
+
+const weatherData = `{
+"temp": 284.2,
+"feels_like": 282.93,
+"temp_min": 283.06,
+"temp_max": 286.82,
+"pressure": 1021,
+"humidity": 60,
+"sea_level": 1021,
+"grnd_level": 910
+}`
+
+//this line will convert json data in object
+let data = JSON.parse(weatherData);
+document.write("temperature", data.temp, "kelvin <br>");
+document.write(data.pressure, "<br>");
+document.write(data.humidity,"<br>");
+</script>
